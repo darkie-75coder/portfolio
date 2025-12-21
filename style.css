@@ -35,6 +35,10 @@ body {
     animation: slideRight 1s ease forwards;
 }
 
+.servico {
+    bottom: 50px;
+}
+    
 .navbar a {
     display: inline-block;
     font-size: 25px;
@@ -861,4 +865,5 @@ form textarea {
         transform: translateY(0px);
         opacity: 1;
     }
+
 }
