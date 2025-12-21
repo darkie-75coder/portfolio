@@ -35,10 +35,6 @@ body {
     animation: slideRight 1s ease forwards;
 }
 
-.servico {
-    bottom: 50px;
-}
-    
 .navbar a {
     display: inline-block;
     font-size: 25px;
@@ -201,7 +197,7 @@ body {
     text-align: center;
     font-size: 60px;
     position: relative;
-    top: 60px;
+    bottom: 20px;
 }
 
 .sub-title span {
@@ -284,7 +280,7 @@ body {
     margin-left: 120px;
     position: relative;
     left: 150px;
-    bottom: 100px;
+    bottom: 160px;
 }
 
 .heading1 {
@@ -865,5 +861,4 @@ form textarea {
         transform: translateY(0px);
         opacity: 1;
     }
-
 }
