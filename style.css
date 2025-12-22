@@ -280,7 +280,7 @@ body {
     margin-left: 120px;
     position: relative;
     left: 150px;
-    bottom: 180px;
+    bottom: 160px;
 }
 
 .heading1 {
@@ -631,6 +631,39 @@ body {
     bottom: 60px;
 }
 
+.layer1 i {
+    color: black;
+    background: #0ef;
+}
+
+.layer1 i:hover {
+    background-color: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.layer2 i {
+    color: black;
+    background: #0ef;
+}
+
+.layer2 i:hover {
+    background-color: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.layer3 i {
+    color: black;
+    background: #0ef;
+}
+
+.layer3 i:hover {
+    background-color: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+
 
 .contact {
     display: grid;
@@ -862,4 +895,3 @@ form textarea {
         opacity: 1;
     }
 }
-
