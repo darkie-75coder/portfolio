@@ -160,7 +160,7 @@ body {
 .about-img img {
     padding-bottom: 20%;
     height: 600px;
-    margin-left: 40px;
+    margin-left: 100px;
     border-radius: 8px;
 }
 
@@ -899,3 +899,4 @@ form textarea {
         opacity: 1;
     }
 }
+
