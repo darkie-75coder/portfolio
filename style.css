@@ -35,6 +35,7 @@ body {
     animation: slideRight 1s ease forwards;
 }
 
+
 .navbar a {
     display: inline-block;
     font-size: 25px;
@@ -145,17 +146,21 @@ body {
 }
 
 .about {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15rem;
 }
 
 .about-img {
-    padding-bottom: 20%;
-    max-width: 630px;
+    width: 700px;
     height: auto;
-    width: 100%;
+    border-radius: 8px;
+}
+
+.about-img img {
+    padding-bottom: 20%;
+    height: 600px;
+    margin-left: 40px;
     border-radius: 8px;
 }
 
@@ -180,6 +185,7 @@ body {
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 4rem;
+    margin-right: 20px;
 }
 
 .container {
@@ -273,14 +279,12 @@ body {
 }
 
 .container1 {
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     height: 500px;
     padding-top: 200px;
     padding-bottom: 20px;
     margin-left: 120px;
-    position: relative;
-    left: 150px;
-    bottom: 160px;
 }
 
 .heading1 {
