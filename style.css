@@ -16,7 +16,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
+    padding: 20px;
     background: #051129;
     display: flex;
     justify-content: space-between;
@@ -162,6 +162,11 @@ body {
     height: 600px;
     margin-left: 100px;
     border-radius: 8px;
+    padding-top: 100px;
+}
+
+.about-text {
+    padding-top: 100px;
 }
 
 .about-text h2 {
@@ -177,7 +182,7 @@ body {
     font-weight: 600;
     color: #fff;
     line-height: 1.7;
-    margin: 15px 0 30px;
+    margin: 15px 0 15px;
 }
 
 .about-text p {
@@ -557,7 +562,8 @@ body {
 
 .portfolio-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(359px, auto));
+    gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 631px))
 }
 
 .log1 {
@@ -828,6 +834,139 @@ form textarea {
     animation: words 5s infinite;
 }
 
+.container2 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.team h2 {
+    padding: 20px;
+    color: #fff;
+    font-size: 60px;
+    margin-top: 100px;
+    position: relative;
+}
+
+.container2 .card {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border: 5px solid rgba(0, 0, 0, 0.25);
+}
+
+.container2 .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.container2 .card:hover .content {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.container2 .card .content .imgBx {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid rgba(0, 0, 0, 0.25);
+}
+
+.container2 .card .content .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container2 .card .content .contentBx h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1rem;
+}
+
+.container2 .card .sci {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+}
+
+.container2 .card .sci li {
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.1s * var(--i));
+}
+
+.container2 .card:hover .sci li {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container2 .card .sci li a {
+    color: #fff;
+    font-size: 24px;
+    color: #0ef;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    transition: 0.5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(0.2s * var(--i));
+    margin: 30px 15px 30px 0;
+}
+
+.container2 .card .sci li a:hover {
+    background-color: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.tt {
+    color: #0ef;
+}
+
+
+
+
+
 @keyframes animate {
     100% {
         transform: scaleX(1);
@@ -899,4 +1038,3 @@ form textarea {
         opacity: 1;
     }
 }
-
