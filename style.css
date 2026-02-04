@@ -566,6 +566,10 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(auto, 631px))
 }
 
+.portfolio {
+    margin-bottom: 100px;
+}
+
 .log1 {
     color: #0ef;
 }
@@ -684,13 +688,12 @@ body {
     margin-top: 130px;
 }
 
-.contact-text h2 {
+.c-text {
     font-size: 90px;
-    line-height: 1;
     text-align: center;
 }
 
-.contact-text h2 span {
+.c-text span {
     color: #0ef;
 }
 
@@ -699,6 +702,10 @@ body {
     color: rgb(228, 228, 228);
     font-size: 20px;
     font-weight: 600;
+}
+
+.contact-text {
+    margin-left: 60px;
 }
 
 .contact-text p {
@@ -963,8 +970,66 @@ form textarea {
     color: #0ef;
 }
 
+.toastBox {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+}
 
+.toast {
+    padding: 25px;
+    margin-top: 20px;
+    height: 80px;
+    width: 450px;
+    color: #fff;
+    background: #000;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    gap: 20px;
+}
 
+.toast.success::after {
+    content: '';
+    height: 5px;
+    background-color: green;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 25px;
+    animation: animbaba 6s linear forwards;
+}
+
+.toast.error::after {
+    content: '';
+    height: 5px;
+    background-color: red;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 25px;
+    animation: animbaba 6s linear forwards;
+}
+
+.toast.success i {
+    font-size: 35px;
+    color: green
+}
+
+.toast.error i {
+    font-size: 35px;
+    color: red;
+}
+
+@keyframes animbaba {
+    100% {
+        width: 0;
+    }
+}
 
 
 @keyframes animate {
